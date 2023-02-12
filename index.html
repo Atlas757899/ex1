@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Разминка</title>
+		<script>
+		 function freim(a) 
+		 {
+		 if (a==1) top.right.location = '333.html';
+		 else if (a==2) top.right.location = '222.html';
+		 else if (a==3) top.right.location = '101010.html';
+		 }
+		</script>
+	</head>
+	<body> 
+	    <img src = "1.jpg" alt = "Изображение здесь!.. Только его нет." width = "200" height = "200">
+	    <p style = "font-size: 32px">Блиновский А.Д.</p> 
+	    <p style = "font-size: 24px">Факультет ИиВТ</p>
+	    <link href="Css.css" rel="stylesheet" type="text/css">
+	    <div class="dropdown">
+  		<button class="dropbtn">Выпадающее</button>
+  		<div class="dropdown-content">
+  		  <a href="121212.html">Тексты</a>
+		  <a href="131313.html">Анимация</a>
+  		</div>
+	    </div>  
+	    <form>
+		<fieldset>
+		 <legend>Ваши контакты</legend>
+		 Имя: <input type ="text" name ="nam">
+		 E-mail: <input type ="text" name ="mail">
+		 <input type ="submit">
+		</fieldset>
+	   </form>
+	   <center>
+            <table border = "1"> <caption>Про меня</caption> 
+ 	    <tr>  
+	      <th onmouseover="freim(1)"> Образование</th>
+   	      <th onmouseover="freim(1)"> 11 классов школы</th>
+	    </tr>
+	    <tr>  
+   	      <th onmouseover="freim(2)"> Контакты</th>
+	      <th onmouseover="freim(2)"> Голубиная почта</th>
+	    </tr>
+ 	    <tr>  
+   	      <th onmouseover="freim(3)"> Опыт</th>
+	      <th onmouseover="freim(3)"> Нет</th>
+	    </tr>
+	    </center>
+	</body>
+</html>

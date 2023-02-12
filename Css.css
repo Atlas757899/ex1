@@ -1,0 +1,105 @@
+body {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  font-size: 14px;
+  background-color: white;
+}
+table {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  font-size: 14px;
+  background: white;
+  max-width: 70%;
+  width: 70%;
+  border-collapse: collapse;
+  text-align: left;
+}
+th {
+  font-weight: normal;
+  color: #039;
+  border-bottom: 2px solid #6678b1;
+  padding: 10px 8px;
+}
+td {
+  color: #669;
+  padding: 9px 8px;
+  transition: .3s linear;
+}
+tr:hover td {
+  color: #6699ff;
+}
+
+.highway{
+    height: 100%;
+    width: 500%;
+    display: block;
+    background-image: url("road.jpg");
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: highway 5s linear infinite;
+}
+
+@keyframes highway{
+    100%{
+        transform: translateX(-3400px);
+    }
+}
+.car{
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.car img{
+    width: 100%;
+    animation: car 1s linear infinite;
+}
+
+@keyframes car{
+    100%{
+        transform: translateY(-1px);
+    }
+    50%{
+        transform: translateY(1px);
+    }
+    0%{
+        transform: translateY(-1px);
+    }
+}
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
